@@ -74,8 +74,7 @@ tlinesBottom.timeScale(2);
 
 
 
-var birdTimeline1 = new TimelineMax({ repeat: -1, yoyo: true });
-
+let birdTimeline1 = new TimelineMax({ repeat: -1, yoyo: true });
 birdTimeline1
 .staggerFromTo("#FirstLeft", 3,
   {
@@ -85,13 +84,14 @@ birdTimeline1
   {
     rotation: -10,
     ease: Power3.easeInOut,
-    opacity: 0.5
+    opacity: 0.7
   })
 
-var birdTimeline2 = new TimelineMax({ repeat: -1,  yoyo: true });
 
+
+let birdTimeline2 = new TimelineMax({ repeat: -1,  yoyo: true });
 birdTimeline2
-  .staggerFromTo( "#FirstRight", 3,
+.staggerFromTo("#FirstRight", 3,
     {
       rotation: -5,
       ease: Power3.easeInOut
@@ -99,64 +99,56 @@ birdTimeline2
     {
       rotation: -10,
       ease: Power3.easeInOut,
-      opacity: 0.5,
+      opacity: 0.7,
     })
 
 
-// birdTimeline.fromTo("#FirstRight", 2,
-//   {
-//     rotation: -7,
-//     ease: Power3.easeInOut
-//   },
-//   {
-//     rotation: -5,
-//     ease: Power3.easeInOut
-//   });
+
+let birdTimeline3 = new TimelineMax({ repeat: -1, yoyo: true });
+birdTimeline3
+  .staggerFromTo("#SecondLeft", 3,
+    {
+      rotation: -7,
+      ease: Power3.easeInOut,
+      opacity: 0.7
+    },
+    {
+      rotation: -1,
+      ease: Power3.easeInOut
+    })
+
+
+
+let birdTimeline4 = new TimelineMax({ repeat: -1, yoyo: true });
+birdTimeline4
+  .staggerFromTo("#SecondRight", 3,
+    {
+
+      rotation: -25,
+      ease: Power3.easeInOut,
+
+    },
+    {
+      rotation: -2,
+      ease: Power3.easeInOut,
+      opacity: 0.5,
+  
+    })
 
 
 
 
 
-// BIRSDS
 
 
-// // LEFT 
-//  TweenMax.staggerFrom(".FirstLeft", 5, {
-//   drawSVG: 0
-// }, 0.02);
-//  TweenMax.staggerFrom(".SecondLeft", 5, {
-//   drawSVG: 0
-// }, 0.01);
-//  TweenMax.staggerFrom(".ThirdLeft", 5, {
-//   drawSVG: 0
-// }, 0.01);
-//  TweenMax.staggerFrom(".FourthLeft", 5, {
-//   drawSVG: 0
-// }, 0.02);
-//  TweenMax.staggerFrom(".FifthLeft", 5, {
-//   drawSVG: 0
-// }, 0.01);
-// TweenMax.staggerFrom(".FifthRight", 5, {
-//   drawSVG: 0
-// }, 0.01);
-
-//  // RIGHT 
-
-//  TweenMax.staggerFrom(".FirstRight", 5, {
-//   drawSVG: 0
-// }, 0.01);
-//  TweenMax.staggerFrom(".SecondRight", 5, {
-//   drawSVG: 0
-// }, 0.02);
-//  TweenMax.staggerFrom(".ThirdRight", 5, {
-//   drawSVG: 0
-// }, 0.02);
-//  TweenMax.staggerFrom(".FourthRight", 5, {
-//   drawSVG: 0,
-// }, 0.01);
 
 
-// // THEN: 
+
+
+
+
+
+// BIRDS: 
 
 
 // var tl = new TimelineMax({
@@ -254,4 +246,47 @@ birdTimeline2
 //   }, 0.035, "Time1+=10")
 
 // // tl.timeScale(2);
+
+
+
+// OLD 
+
+// BIRSDS
+
+
+// LEFT 
+
+//  TweenMax.staggerFrom(".FirstLeft", 5, {
+//   drawSVG: 0
+// }, 0.02)
+//  TweenMax.staggerFrom(".SecondLeft", 5, {
+//   drawSVG: 0
+// }, 0.01);
+//  TweenMax.staggerFrom(".ThirdLeft", 5, {
+//   drawSVG: 0
+// }, 0.01);
+//  TweenMax.staggerFrom(".FourthLeft", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".FifthLeft", 5, {
+//   drawSVG: 0
+// }, 0.01);
+// TweenMax.staggerFrom(".FifthRight", 5, {
+//   drawSVG: 0
+// }, 0.01);
+
+//  // RIGHT 
+
+//  TweenMax.staggerFrom(".FirstRight", 5, {
+//   drawSVG: 0
+// }, 0.01);
+//  TweenMax.staggerFrom(".SecondRight", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".ThirdRight", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".FourthRight", 5, {
+//   drawSVG: 0,
+// }, 0.01);
 

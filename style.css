@@ -73,6 +73,7 @@ h1 {
 
   .SecondLeft {
     stroke-width: 1px;
+        stroke: rgb(101, 107, 76);
   }
 
   .FourthLeft {
@@ -87,7 +88,7 @@ h1 {
 
   .SecondRight{
         stroke-width: 1px;
-/*     stroke: rgb(0, 238, 255); */
+    stroke: rgb(120, 128, 109);
   }
 
   .FirstRight {
