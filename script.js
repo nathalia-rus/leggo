@@ -55,12 +55,12 @@ tlinesBottom.timeScale(2);
 
 // REMOVE LINES ADTER INITIAL
 
-TweenLite.to("#FirstLineTop", 2, {delay: 10, autoAlpha:0});
-TweenLite.to("#MiddleLineTop", 2, { delay: 10, autoAlpha:0});
-TweenLite.to("#LastLineTop", 2, { delay: 10, autoAlpha:0});
-TweenLite.to("#TopLineBottom", 2, { delay: 10, autoAlpha:0});
-TweenLite.to("#BottomLineBottom", 2, { delay: 10, autoAlpha:0});
-TweenLite.to("#MiddleLineBottom", 2, { delay: 10, autoAlpha:0});
+TweenLite.to("#FirstLineTop", 3, { delay: 15, autoAlpha:0});
+TweenLite.to("#MiddleLineTop", 3, { delay: 15, autoAlpha:0});
+TweenLite.to("#LastLineTop", 3, { delay: 15, autoAlpha:0});
+TweenLite.to("#TopLineBottom", 3, { delay: 15, autoAlpha:0});
+TweenLite.to("#BottomLineBottom", 3, { delay: 15, autoAlpha:0});
+TweenLite.to("#MiddleLineBottom", 3, { delay: 15, autoAlpha:0});
 
 // ETOILES DEFILANTES
 
@@ -153,7 +153,7 @@ tl.timeScale(2);
 // rotation ok 
 
 
-let birdTimeline1 = new TimelineMax({ delay: 11, repeat: -1, yoyo: true });
+let birdTimeline1 = new TimelineMax({ delay: 15, repeat: -1, yoyo: true });
 birdTimeline1
 .staggerFromTo("#FirstLeft", 2,
   {
@@ -171,7 +171,7 @@ birdTimeline1
   })
 
 
-let birdTimeline2 = new TimelineMax({ delay: 11, repeat: -1,  yoyo: true }); //18 delay
+let birdTimeline2 = new TimelineMax({ delay: 15, repeat: -1,  yoyo: true }); //18 delay
 birdTimeline2
 .staggerFromTo("#FirstRight", 2,
     {
@@ -190,7 +190,7 @@ birdTimeline2
 
 
 
-let birdTimeline3 = new TimelineMax({ delay: 10, repeat: -1, yoyo: true });
+let birdTimeline3 = new TimelineMax({ delay: 14, repeat: -1, yoyo: true });
 birdTimeline3
   .staggerFromTo("#SecondLeft", 3,
     {
@@ -206,7 +206,7 @@ birdTimeline3
 
 
 
-let birdTimeline4 = new TimelineMax({ delay: 10, repeat: -1, yoyo: true });
+let birdTimeline4 = new TimelineMax({ delay: 14, repeat: -1, yoyo: true });
 birdTimeline4
   .staggerFromTo("#SecondRight", 3,
     {
@@ -224,7 +224,7 @@ birdTimeline4
     })
 
 
-    let birdTimeline5 = new TimelineMax({ delay: 10, repeat: -1, yoyo: true }); // 17
+let birdTimeline5 = new TimelineMax({ delay: 14, repeat: -1, yoyo: true }); // 17
 birdTimeline5
 .staggerFromTo("#ThirdLeft", 2.5,
   {
@@ -243,7 +243,7 @@ birdTimeline5
 
 
 
-let birdTimeline6 = new TimelineMax({ delay: 10, repeat: -1,  yoyo: true }); // 17
+let birdTimeline6 = new TimelineMax({ delay: 14, repeat: -1,  yoyo: true }); // 17
 birdTimeline6
 .staggerFromTo("#ThirdRight",  2.5,
     {
@@ -261,7 +261,7 @@ birdTimeline6
     })
 
 
-let birdTimeline7 = new TimelineMax({ delay: 11, repeat: -1, yoyo: true }); //18
+let birdTimeline7 = new TimelineMax({ delay: 15, repeat: -1, yoyo: true }); //18
 birdTimeline7
   .staggerFromTo("#FourthLeft", 3,
     {
@@ -280,7 +280,7 @@ birdTimeline7
 
 
 
-let birdTimeline8 = new TimelineMax({ delay: 11, repeat: -1, yoyo: true }); //18
+let birdTimeline8 = new TimelineMax({ delay: 15, repeat: -1, yoyo: true }); //18
 birdTimeline8
   .staggerFromTo("#FourthRight", 3,
     {
@@ -299,7 +299,7 @@ birdTimeline8
     })
 
 
-    let birdTimeline9 = new TimelineMax({ delay: 10, repeat: -1, yoyo: true });
+let birdTimeline9 = new TimelineMax({ delay: 14, repeat: -1, yoyo: true });
 birdTimeline9
   .staggerFromTo("#FifthLeft", 2.5,
     {
@@ -317,7 +317,7 @@ birdTimeline9
 
 
 
-    let birdTimeline10 = new TimelineMax({ delay: 10, repeat: -1, yoyo: true }); //10
+let birdTimeline10 = new TimelineMax({ delay: 14, repeat: -1, yoyo: true }); //10
 birdTimeline10
 .staggerFromTo("#FifthRight", 2.5,
     {

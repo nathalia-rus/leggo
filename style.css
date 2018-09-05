@@ -1,11 +1,14 @@
 html {
     background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
 }
 
 svg {
-  margin-top: 5%;
-  margin-left: 6%;
+  margin-top: 7%;
+  margin-left: 22%;
+}
+
+h1 {
+  color: white
 }
 
 /* .path {
@@ -37,32 +40,32 @@ h1 {
 
   #FirstLineTop {
       stroke-width: 5px;
-  stroke: white;
+  stroke: white
   }
 
   #MiddleLineTop {
       stroke-width: 5px;
-  stroke: white;
+  stroke: white
   }
 
     #LastLineTop {
       stroke-width: 5px;
-  stroke: white;
+  stroke: white
   }
 
       #TopLineBottom {
       stroke-width: 5px;
-  stroke: white;
+  stroke: white
   }
 
       #BottomLineBottom {
       stroke-width: 5px;
-  stroke: white;
+  stroke: white
   }
 
         #MiddleLineBottom {
       stroke-width: 5px;
-  stroke: white;
+  stroke: white
   }
 
 
@@ -70,8 +73,8 @@ h1 {
 
 #TopLineBottomThen {
   stroke-width: 5px;
-  stroke: red;
-    fill: red;
+  stroke: white;
+    fill: white;
   opacity: 0
   }
 
@@ -84,8 +87,8 @@ h1 {
 
 #MiddleLineBottomThen {
   stroke-width: 5px;
-  stroke: red;
-    fill: red;
+  stroke: white;
+    fill: white;
     opacity: 0
   }
 
@@ -98,8 +101,8 @@ h1 {
 
 #LastLineTopThen {
   stroke-width: 5px;
-  stroke: red;
-    fill: red;
+  stroke: white;
+    fill: white;
     opacity: 0
   }
 
@@ -113,54 +116,56 @@ h1 {
 
   .FirstLeft {
     stroke-width: 1px;
+    stroke: rgb(255, 0, 242);
   }
 
     .FirstRight {
     stroke-width: 1px;
+    stroke: rgb(255, 0, 242);
   }
 
     .SecondLeft {
     stroke-width: 1px;
-        stroke: rgb(101, 107, 76);
+    stroke: rgb(64, 255, 80);
   }
 
     .SecondRight{
-        stroke-width: 1px;
-    stroke: rgb(206, 214, 194);
+    stroke-width: 1px;
+    stroke: rgb(64, 255, 80);
   }
 
     .ThirdLeft {
-            stroke-width: 1px;
-    stroke: rgb(140, 151, 112);
+      stroke-width: 1px;
+      stroke: rgb(49, 214, 255);
   }
 
   .ThirdRight {
-            stroke-width: 1px;
-    stroke: rgb(197, 209, 167);
+    stroke-width: 1px;
+    stroke: rgb(52, 255, 255);
   }
 
 /*   added class Third  */
 
   .FourthLeft {
     stroke-width: 0.5px;
-    stroke: #737373
+    stroke: rgb(174, 0, 255);
   }
 
 
   .FourthRight {
     stroke-width: 1px;
-        stroke: #404040
+    stroke: rgb(174, 0, 255);
   }
 
 
     .FifthLeft {
         stroke-width: 1px;
-        stroke: white;
+stroke: rgb(217, 255, 0);
   }
 
 
       .FifthRight {
             stroke-width: 1px;
 /*     stroke: rgb(0, 238, 255); */
-       stroke: white;
+stroke: rgb(200, 255, 0);
   }
