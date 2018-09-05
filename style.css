@@ -31,6 +31,10 @@ h1 {
   font-size: 20px;
 }
 
+
+/* // FIRST LINES  */
+
+
   #FirstLineTop {
       stroke-width: 5px;
   stroke: white;
@@ -51,7 +55,6 @@ h1 {
   stroke: white;
   }
 
-
       #BottomLineBottom {
       stroke-width: 5px;
   stroke: white;
@@ -60,6 +63,44 @@ h1 {
         #MiddleLineBottom {
       stroke-width: 5px;
   stroke: white;
+  }
+
+
+  /* // REST LINES  */
+
+#TopLineBottomThen {
+  stroke-width: 5px;
+  stroke: white;
+  opacity: 0
+  }
+
+#BottomLineBottomThen {
+  stroke-width: 1px;
+    opacity: 0
+  }
+
+#MiddleLineBottomThen {
+  stroke-width: 5px;
+  stroke: white;
+    opacity: 0
+  }
+
+#FirstLineTopThen {
+  stroke-width: 5px;
+  stroke: white;
+    opacity: 0
+  }
+
+#LastLineTopThen {
+  stroke-width: 5px;
+  stroke: white;
+    opacity: 0
+  }
+
+#MiddleLineTopThen {
+  stroke-width: 5px;
+  stroke: white;
+    opacity: 0
   }
 
 
