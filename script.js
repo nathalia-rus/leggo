@@ -14,7 +14,7 @@ TweenMax.to("svg", 1, { opacity: 1,
 // LINES
 
 // LINES TOP
-var tlinesTop = new TimelineMax({ ease: Power1.easeInOut,});
+var tlinesTop = new TimelineMax({ ease: Power1.easeInOut, yoyo: true  });
   // { repeat: -1,
   // repeatDelay: 37 }
 
@@ -43,7 +43,7 @@ tlinesTop.timeScale(2);
 
 // LINES BOTTOM
 
-var tlinesBottom = new TimelineMax();
+var tlinesBottom = new TimelineMax({yoyo: true });
   // { repeat: -1,
   // repeatDelay: 37 }
 
@@ -70,43 +70,93 @@ tlinesBottom.timeScale(2);
 
 
 
+// rotation essays 
+
+
+
+var birdTimeline1 = new TimelineMax({ repeat: -1, yoyo: true });
+
+birdTimeline1
+.staggerFromTo("#FirstLeft", 3,
+  {
+    rotation: -7,
+    ease: Power3.easeInOut
+  },
+  {
+    rotation: -10,
+    ease: Power3.easeInOut,
+    opacity: 0.5
+  })
+
+var birdTimeline2 = new TimelineMax({ repeat: -1,  yoyo: true });
+
+birdTimeline2
+  .staggerFromTo( "#FirstRight", 3,
+    {
+      rotation: -5,
+      ease: Power3.easeInOut
+    },
+    {
+      rotation: -10,
+      ease: Power3.easeInOut,
+      opacity: 0.5,
+    })
+
+
+// birdTimeline.fromTo("#FirstRight", 2,
+//   {
+//     rotation: -7,
+//     ease: Power3.easeInOut
+//   },
+//   {
+//     rotation: -5,
+//     ease: Power3.easeInOut
+//   });
+
+
+
+
+
 // BIRSDS
 
 
-// LEFT 
- TweenMax.staggerFrom(".FirstLeft", 5, {
-  drawSVG: 0
-}, 0.02);
- TweenMax.staggerFrom(".SecondLeft", 5, {
-  drawSVG: 0
-}, 0.01);
- TweenMax.staggerFrom(".ThirdLeft", 5, {
-  drawSVG: 0
-}, 0.01);
- TweenMax.staggerFrom(".FourthLeft", 5, {
-  drawSVG: 0
-}, 0.02);
- TweenMax.staggerFrom(".FifthLeft", 5, {
-  drawSVG: 0
-}, 0.01);
-TweenMax.staggerFrom(".FifthRight", 5, {
-  drawSVG: 0
-}, 0.01);
+// // LEFT 
+//  TweenMax.staggerFrom(".FirstLeft", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".SecondLeft", 5, {
+//   drawSVG: 0
+// }, 0.01);
+//  TweenMax.staggerFrom(".ThirdLeft", 5, {
+//   drawSVG: 0
+// }, 0.01);
+//  TweenMax.staggerFrom(".FourthLeft", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".FifthLeft", 5, {
+//   drawSVG: 0
+// }, 0.01);
+// TweenMax.staggerFrom(".FifthRight", 5, {
+//   drawSVG: 0
+// }, 0.01);
 
- // RIGHT 
- TweenMax.staggerFrom(".FirstRight", 5, {
-  drawSVG: 0
-}, 0.01);
- TweenMax.staggerFrom(".SecondRight", 5, {
-  drawSVG: 0
-}, 0.02);
- TweenMax.staggerFrom(".ThirdRight", 5, {
-  drawSVG: 0
-}, 0.02);
- TweenMax.staggerFrom(".FourthRight", 5, {
-  drawSVG: 0,
-}, 0.01);
+//  // RIGHT 
 
+//  TweenMax.staggerFrom(".FirstRight", 5, {
+//   drawSVG: 0
+// }, 0.01);
+//  TweenMax.staggerFrom(".SecondRight", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".ThirdRight", 5, {
+//   drawSVG: 0
+// }, 0.02);
+//  TweenMax.staggerFrom(".FourthRight", 5, {
+//   drawSVG: 0,
+// }, 0.01);
+
+
+// // THEN: 
 
 
 // var tl = new TimelineMax({
@@ -147,61 +197,61 @@ TweenMax.staggerFrom(".FifthRight", 5, {
 //   }, 0.1, "Time1")
 
 
-var tflight = new TimelineMax({
-  delay: 30,
-  ease: Power1.easeInOut,
-  repeat: -1,
-  repeatDelay: 2,
-  onReverseComplete: reverseRepeat﻿,
-  onReverseCompleteParams: ['{self}']
-});
+// var tflight = new TimelineMax({
+//   delay: 30,
+//   ease: Power1.easeInOut,
+//   repeat: -1,
+//   repeatDelay: 2,
+//   onReverseComplete: reverseRepeat﻿,
+//   onReverseCompleteParams: ['{self}']
+// });
 
-var reverseRepeat = function (tflight) {
-  tl.reverse(0); // 0 sets the playhead at the end of the animation
-}
+// var reverseRepeat = function (tflight) {
+//   tl.reverse(0); // 0 sets the playhead at the end of the animation
+// }
 
 
-tflight
-.staggerFrom(".FirstLeft", 1, {
-  drawSVG: 0,
-  rotation: 360,
-  delay: 5
-  }, 0.02, "Time1+=10")
-.staggerFrom(".SecondLeft", 1, {
-  drawSVG: 0,
-  rotation: 360,
-  }, 0.05, "Time1+=10")
-.staggerFrom(".ThirdLeft", 1, {
-  drawSVG: 0,
-  rotation: 360
-  }, 0.03, "Time1+=10")
-  .staggerFrom(".FourthLeft", 1, {
-  drawSVG: 0
-  }, 0.04, "Time1+=10")
-.staggerFrom(".FifthRight", 1, {
-  drawSVG: 0,
-  rotation: 360
-  }, 0.1, "Time1-=60")
-  .staggerFrom(".FifthLeft", 1, {
-    drawSVG: 0,
-    rotation: 360
-  }, 0.055, "Time1+=10")
-  .staggerFrom(".FirstRight", 1, {
-  drawSVG: 0,
-    rotation: 360
-  }, 0.025, "Time1+=10")
-  .staggerFrom(".SecondRight", 1, {
-  drawSVG: 0,
-    rotation: 360
-  }, 0.045, "Time1+=10" )
-  .staggerFrom(".ThirdRight", 1, {
-  drawSVG: 0,
-    rotation: 360
-  }, 0.015, "Time1+=10")
-  .staggerFrom(".FourthRight", 1, {
-  drawSVG: 0,
-    rotation: 360
-  }, 0.035, "Time1+=10")
+// tflight
+// .staggerFrom(".FirstLeft", 1, {
+//   drawSVG: 0,
+//   rotation: 360,
+//   delay: 5
+//   }, 0.02, "Time1+=10")
+// .staggerFrom(".SecondLeft", 1, {
+//   drawSVG: 0,
+//   rotation: 360,
+//   }, 0.05, "Time1+=10")
+// .staggerFrom(".ThirdLeft", 1, {
+//   drawSVG: 0,
+//   rotation: 360
+//   }, 0.03, "Time1+=10")
+//   .staggerFrom(".FourthLeft", 1, {
+//   drawSVG: 0
+//   }, 0.04, "Time1+=10")
+// .staggerFrom(".FifthRight", 1, {
+//   drawSVG: 0,
+//   rotation: 360
+//   }, 0.1, "Time1-=60")
+//   .staggerFrom(".FifthLeft", 1, {
+//     drawSVG: 0,
+//     rotation: 360
+//   }, 0.055, "Time1+=10")
+//   .staggerFrom(".FirstRight", 1, {
+//   drawSVG: 0,
+//     rotation: 360
+//   }, 0.025, "Time1+=10")
+//   .staggerFrom(".SecondRight", 1, {
+//   drawSVG: 0,
+//     rotation: 360
+//   }, 0.045, "Time1+=10" )
+//   .staggerFrom(".ThirdRight", 1, {
+//   drawSVG: 0,
+//     rotation: 360
+//   }, 0.015, "Time1+=10")
+//   .staggerFrom(".FourthRight", 1, {
+//   drawSVG: 0,
+//     rotation: 360
+//   }, 0.035, "Time1+=10")
 
-// tl.timeScale(2);
+// // tl.timeScale(2);
 
