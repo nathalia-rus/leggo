@@ -4,7 +4,7 @@ html {
 }
 
 svg {
-  margin-top: 3.9%;
+  margin-top: 5%;
   margin-left: 6%;
 }
 
@@ -70,36 +70,43 @@ h1 {
 
 #TopLineBottomThen {
   stroke-width: 5px;
-  stroke: white;
+  stroke: red;
+    fill: red;
   opacity: 0
   }
 
 #BottomLineBottomThen {
   stroke-width: 1px;
-    opacity: 0
+    opacity: 0;
+      fill: white;
+      stroke: white;
   }
 
 #MiddleLineBottomThen {
   stroke-width: 5px;
-  stroke: white;
+  stroke: red;
+    fill: red;
     opacity: 0
   }
 
 #FirstLineTopThen {
   stroke-width: 5px;
   stroke: white;
+    fill: white;
     opacity: 0
   }
 
 #LastLineTopThen {
   stroke-width: 5px;
-  stroke: white;
+  stroke: red;
+    fill: red;
     opacity: 0
   }
 
 #MiddleLineTopThen {
   stroke-width: 5px;
   stroke: white;
+  fill: white;
     opacity: 0
   }
 
