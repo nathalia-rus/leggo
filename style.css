@@ -1,0 +1,106 @@
+html {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+svg {
+  margin-top: 3.9%;
+  margin-left: 6%;
+}
+
+/* .path {
+  stroke-dasharray: 300;
+   stroke-dashoffset: 300;
+   animation: offset 2s infinite  linear forwards;
+}
+
+@keyframes offset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+ */
+
+ svg {
+   opacity: 0
+ }
+
+h1 {
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+  #FirstLineTop {
+      stroke-width: 5px;
+  stroke: white;
+  }
+
+  #MiddleLineTop {
+      stroke-width: 5px;
+  stroke: white;
+  }
+
+    #LastLineTop {
+      stroke-width: 5px;
+  stroke: white;
+  }
+
+      #TopLineBottom {
+      stroke-width: 5px;
+  stroke: white;
+  }
+
+
+      #BottomLineBottom {
+      stroke-width: 5px;
+  stroke: white;
+  }
+
+        #MiddleLineBottom {
+      stroke-width: 5px;
+  stroke: white;
+  }
+
+
+  .FirstLeft {
+    stroke-width: 1px;
+  }
+
+  .FifthLeft {
+        stroke-width: 1px;
+  }
+
+  .SecondLeft {
+    stroke-width: 1px;
+  }
+
+  .FourthLeft {
+    stroke-width: 1px;
+/*     stroke: rgb(0, 238, 255); */
+  }
+
+
+  .FourthRight {
+    stroke-width: 1px;
+  }
+
+  .SecondRight{
+        stroke-width: 1px;
+/*     stroke: rgb(0, 238, 255); */
+  }
+
+  .FirstRight {
+            stroke-width: 1px;
+/*     stroke: rgb(0, 238, 255); */
+  }
+
+  .ThirdRight {
+            stroke-width: 1px;
+/*     stroke: rgb(0, 238, 255); */
+  }
+
+  .ThirdLeft {
+            stroke-width: 1px;
+/*     stroke: rgb(0, 238, 255); */
+  }
