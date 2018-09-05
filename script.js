@@ -1,6 +1,5 @@
 
-
-// 
+// to start with black screen
 
 TweenMax.to("svg", 2, { opacity: 1 }, 0.5)
 
@@ -52,23 +51,6 @@ tlinesBottom
 
 tlinesBottom.timeScale(2);
 
-// TweenMax.staggerFrom("#TopLineBottom", 25, {
-//   fill: "#000000",
-//   drawSVG: 0,
-//   delay: 2
-// }, 0.01);
-
-// TweenMax.staggerFrom("#MiddleLineBottom", 25, {
-//   fill: "#000000",
-//   drawSVG: 0,
-//   delay: 1
-// }, 0.01);
-
-// TweenMax.staggerFrom("#BottomLineBottom", 25, {
-//   fill: "#000000",
-//   drawSVG: 0,
-//   delay: 0
-// }, 0.01);
 
 var tl = new TimelineLite(); 
 
@@ -104,71 +86,3 @@ tl
 
 tl.timeScale(2);
 
-// LEFT 
-
-// TweenMax.staggerFrom(".FirstLeft", 5, {
-//   drawSVG: 0
-// }, 0.02);
-
-// TweenMax.staggerFrom(".SecondLeft", 5, {
-//   drawSVG: 0
-// }, 0.01);
-
-// TweenMax.staggerFrom(".ThirdLeft", 5, {
-//   drawSVG: 0
-// }, 0.01);
-
-// TweenMax.staggerFrom(".FourthLeft", 5, {
-//   drawSVG: 0
-// }, 0.02);
-
-// TweenMax.staggerFrom(".FifthLeft", 5, {
-//   drawSVG: 0
-// }, 0.01);
-
-
-
-// // RIGHT 
-
-// TweenMax.staggerFrom(".FirstRight", 5, {
-//   drawSVG: 0
-// }, 0.01);
-
-// TweenMax.staggerFrom(".SecondRight", 5, {
-//   drawSVG: 0
-// }, 0.02);
-
-// TweenMax.staggerFrom(".ThirdRight", 5, {
-//   drawSVG: 0
-// }, 0.02);
-
-// TweenMax.staggerFrom(".FourthRight", 5, {
-//   drawSVG: 0,
-// }, 0.01);
-
-
- 
-
-
-
-
-// TWEEN MAX VERSION
-
-// TweenMax.staggerFrom("#FirstLineTop", 25, {
-//   fill: "#000000",
-//   drawSVG: 0,
-//   delay: 0
-// }, 0.01);
-
-// TweenMax.staggerFrom("#MiddleLineTop", 25, {
-//   fill: "#000000",
-//   drawSVG: 0,
-//   delay: 1
-// }, 0.01);
-
-
-// TweenMax.staggerFrom("#LastLineTop", 25, {
-//   fill: "#000000",
-//   drawSVG: 0,
-//   delay: 2
-// }, 0.01);
