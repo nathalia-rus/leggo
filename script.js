@@ -9,7 +9,12 @@ TweenMax.to("svg", 2, { opacity: 1,
 // LINES
 
 // LINES TOP
-var tlinesTop = new TimelineMax({ repeat: -1 });
+var tlinesTop = new TimelineMax();
+  // { repeat: -1,
+  // repeatDelay: 37 }
+
+
+
 tlinesTop
   .staggerFrom("#FirstLineTop", 25, { 
     fill: "#000000",
@@ -33,7 +38,10 @@ tlinesTop.timeScale(2);
 
 // LINES BOTTOM
 
-var tlinesBottom = new TimelineMax({ repeat: -1 });
+var tlinesBottom = new TimelineMax();
+  // { repeat: -1,
+  // repeatDelay: 37 }
+
 
 tlinesBottom
   .staggerFrom("#BottomLineBottom", 25, {
@@ -56,7 +64,18 @@ tlinesBottom
 tlinesBottom.timeScale(2);
 
 
-var tl = new TimelineMax();
+var tl = new TimelineMax({
+  repeat: -1,
+  repeatDelay: 2,
+  onReverseComplete: reverseRepeat﻿,
+  onReverseCompleteParams﻿: ['{self}']
+});
+
+var reverseRepeat = function (tl) {
+  tl.reverse(0); // 0 sets the playhead at the end of the animation
+}
+
+
 
 tl
 .staggerFrom(".FirstLeft", 1, {
