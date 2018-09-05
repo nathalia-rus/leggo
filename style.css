@@ -67,48 +67,52 @@ h1 {
     stroke-width: 1px;
   }
 
-  .FifthLeft {
-        stroke-width: 1px;
+    .FirstRight {
+    stroke-width: 1px;
   }
 
-  .SecondLeft {
+    .SecondLeft {
     stroke-width: 1px;
         stroke: rgb(101, 107, 76);
   }
 
+    .SecondRight{
+        stroke-width: 1px;
+    stroke: rgb(206, 214, 194);
+  }
+
+    .ThirdLeft {
+            stroke-width: 1px;
+    stroke: rgb(140, 151, 112);
+  }
+
+  .ThirdRight {
+            stroke-width: 1px;
+    stroke: rgb(197, 209, 167);
+  }
+
+/*   added class Third  */
+
   .FourthLeft {
-    stroke-width: 1px;
-/*     stroke: rgb(0, 238, 255); */
+    stroke-width: 0.5px;
+    stroke: #737373
   }
 
 
   .FourthRight {
     stroke-width: 1px;
+        stroke: #404040
   }
 
-  .SecondRight{
+
+    .FifthLeft {
         stroke-width: 1px;
-    stroke: rgb(120, 128, 109);
+        stroke: white;
   }
-
-  .FirstRight {
-            stroke-width: 1px;
-/*     stroke: rgb(0, 238, 255); */
-  }
-
-  .ThirdRight {
-            stroke-width: 1px;
-/*     stroke: rgb(0, 238, 255); */
-  }
-
-  .ThirdLeft {
-            stroke-width: 1px;
-/*     stroke: rgb(0, 238, 255); */
-  }
-
 
 
       .FifthRight {
             stroke-width: 1px;
 /*     stroke: rgb(0, 238, 255); */
+       stroke: white;
   }
