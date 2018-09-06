@@ -1,11 +1,78 @@
 
 // to start with black screen
 
+// TweenMax.to(".L", 1, {
+//   fill: "#EA4C88"
+// }, 0.5)
+
+
+
 TweenMax.to("svg", 1, { opacity: 1,
-  transformOrigin: '50% 50%' }, 0.5)
+  transformOrigin: '50% 50%' }, 0.5);
 
 
+var tcouverture = new TimelineMax({ delay: 0, repeatDelay: 3, repeat: -1});
+tcouverture
+  .staggerFromTo( ".couverture", 0.05, 
+  { 
+    autoAlpha: 0 } ,
+  { autoAlpha: 1 })
+  .staggerFromTo(".couverture", 0.03,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.2,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.6,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.5,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.05,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.03,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.5,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 2,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.5,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.8,
+    { opacity: 0 },
+    { opacity: 1 })
+  .staggerFromTo(".couverture", 0.1,
+    { opacity: 0 },
+    { opacity: 1 })
+
+
+// https://www.youtube.com/watch?v=K8eRXvLL7Wo&index=3&list=PLzCxunOM5WFLNCSF0UEHZqFJJlmdeL71S
 // LINES
+
 
 // LINES TOP
 var tlinesTop = new TimelineMax({ delay: 0, ease: Power1.easeInOut, yoyo: true  });
@@ -55,30 +122,30 @@ tlinesBottom.timeScale(2);
 
 // REMOVE LINES ADTER INITIAL
 
-TweenLite.to("#FirstLineTop", 3, { delay: 15, autoAlpha:0});
-TweenLite.to("#MiddleLineTop", 3, { delay: 15, autoAlpha:0});
-TweenLite.to("#LastLineTop", 3, { delay: 15, autoAlpha:0});
-TweenLite.to("#TopLineBottom", 3, { delay: 15, autoAlpha:0});
-TweenLite.to("#BottomLineBottom", 3, { delay: 15, autoAlpha:0});
-TweenLite.to("#MiddleLineBottom", 3, { delay: 15, autoAlpha:0});
+TweenLite.to("#FirstLineTop", 1, { delay: 15, autoAlpha:0});
+TweenLite.to("#MiddleLineTop", 1, { delay: 15, autoAlpha:0});
+TweenLite.to("#LastLineTop", 1, { delay: 15, autoAlpha:0});
+TweenLite.to("#TopLineBottom", 1, { delay: 15, autoAlpha:0});
+TweenLite.to("#BottomLineBottom", 1, { delay: 15, autoAlpha:0});
+TweenLite.to("#MiddleLineBottom", 1, { delay: 15, autoAlpha:0});
 
 // ETOILES DEFILANTES
 
 // // top
 
-var tlineTop1Then = new TimelineMax({ delay: 15, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
+var tlineTop1Then = new TimelineMax({ delay: 20, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
 tlineTop1Then
   .staggerFromTo(["#FirstLineTopThen"], 10, 
   { opacity: 1, x: 3500, ease: Power3.easeInOut},
   { x: -3800, ease: Power3.easeInOut })
 
-  var tlineTop2Then = new TimelineMax({ delay: 15, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
+var tlineTop2Then = new TimelineMax({ delay: 20, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
 tlineTop2Then
   .staggerFromTo(["#MiddleLineTopThen"], 20, 
   { opacity: 1, x: 4100, ease: Power3.easeInOut},
   { x: -3800, ease: Power3.easeInOut })
 
-    var tlineTop3Then = new TimelineMax({ delay: 15, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
+var tlineTop3Then = new TimelineMax({ delay: 20, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
 tlineTop3Then
   .staggerFromTo(["#LastLineTopThen"], 15, 
   { opacity: 1, x: 4000, ease: Power3.easeInOut},
@@ -86,19 +153,19 @@ tlineTop3Then
 
   // bottom
 
-  var tlineTop4Then = new TimelineMax({ delay: 15, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
+var tlineTop4Then = new TimelineMax({ delay: 20, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
 tlineTop4Then
   .staggerFromTo(["#TopLineBottomThen"], 17, 
   { opacity: 1, x: 5500, ease: Power3.easeInOut},
   { x: -3800, ease: Power3.easeInOut })
 
-  var tlineTop5Then = new TimelineMax({ delay: 15, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
+var tlineTop5Then = new TimelineMax({ delay: 20, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
 tlineTop5Then
   .staggerFromTo(["#MiddleLineBottomThen"], 13, 
   { opacity: 1, x: 6000, ease: Power3.easeInOut},
   { x: -3800, ease: Power3.easeInOut })
 
-    var tlineTop6Then = new TimelineMax({ delay: 15, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
+var tlineTop6Then = new TimelineMax({ delay: 20, repeat: -1, repeatDelay: 0, ease: Power1.easeInOut  });
 tlineTop6Then
   .staggerFromTo(["#BottomLineBottomThen"], 21, 
   { opacity: 1, x: 5500, ease: Power3.easeInOut},
